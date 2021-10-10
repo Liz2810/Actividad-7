@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+}
+
+.grid-container > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  color: white;
+  background-color: #0a2747;
+}
+
+.navbar {
+  grid-area: navbar;
+  color: #ffffff;
+  background-color: #1b2fa1;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  color: #ffffff;
+  background-color: #1b2fa1;
+}
+
+.main {
+  display: grid;
+  grid-area: main;
+  color: black;
+  background-color: rgb(194, 194, 194);
+}
+
+.main > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.articulo {
+  grid-area: articulo1;
+  color: black;
+  background-color: white;
+}
+
+.aside {
+  grid-area: aside1;
+  color: black;
+  background-color: white;
+}
+
+.main {
+  display: grid;
+  gap: 10px;
+  grid-template:
+  "articulo1 aside1" auto /
+  450px auto;
+}
+
+.footer {
+  grid-area: footer;
+  color: #ffffff;
+  background-color: #0a2747;
+}
+
+.navbar1{
+    grid-area: navbar1;
+    color: white;
+    background-color: rgb(21, 35, 156);
+}
+
+.main1 {
+  display: grid;
+  grid-area: main1;
+  color:black;
+  background-color: rgb(194, 194, 194);
+}
+
+.main1 > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.articulo1 {
+  grid-area: articulo1;
+  color: black;
+  background-color: white;
+}
+
+.aside1 {
+  grid-area: aside1;
+  color: black;
+  background-color: white;
+}
+
+.main1 {
+  display: grid;
+  gap: 10px;
+  grid-template:
+  "articulo1 aside1" auto /
+  450px auto;
+}
+
+  .grid-container {
+      display: grid;
+      gap: 10px;
+    grid-template:
+      "header  header header"  50px
+      "navbar navbar navbar" 130px
+      "navbar1  main   sidebar" 300px
+      "navbar1  main1  sidebar" 300px
+      "footer  footer footer"  130px /
+      200px    auto   200px;
+  }
